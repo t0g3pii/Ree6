@@ -157,9 +157,6 @@ public class ImageCreationUtility {
 
         graphics2D.setFont(verdana60);
         graphics2D.drawString(username, 425, 675);
-        graphics2D.setColor(Color.LIGHT_GRAY);
-        graphics2D.setFont(verdana40);
-        graphics2D.drawString(discriminatorText, 425, 675 - graphics2D.getFontMetrics(verdana60).getHeight() + 5);
         graphics2D.setColor(Color.magenta.darker().darker());
         graphics2D.fillRoundRect(175, 705, base.getWidth() - 950, 50, 50, 50);
 

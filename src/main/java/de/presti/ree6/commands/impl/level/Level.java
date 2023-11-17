@@ -36,8 +36,10 @@ Level implements ICommand {
 
             if (targetOption != null && targetOption.getAsMember() != null && levelType != null) {
                 sendLevel(targetOption.getAsMember(), commandEvent, levelType.getAsString());
+            } else if (targetOption != null && targetOption.getAsMember() != null) {
+                sendLevel(targetOption.getAsMember(), commandEvent, "voice");
             } else {
-                sendLevel(commandEvent.getMember(), commandEvent, "chat");
+                sendLevel(commandEvent.getMember(), commandEvent, "voice");
             }
         } else {
             if (commandEvent.getArguments().length <= 2) {
